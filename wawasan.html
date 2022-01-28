@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <!-- Bootstrap Font Icon CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery.min.js"></script>
+
+  <!-- JQuery UI -->
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+
+  <!-- Menghubungkan ke CSS -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+   <link rel="icon" href="image/logo.png">
+  <title>Wawasan Sangeh</title>
+
+</head>
+
+<body>
+
+  <div class="container-fulid">
+
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #273036;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="#">ABIANSEMAL DESTINATION</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Beranda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="objek_wisata.html">Objek Wisata</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sarana_akomodasi.html">Sarana dan Akomodasi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="wawasan.html">Wawasan</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-light" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- End Navbar -->
+
+      <!-- Carousel -->
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./image/bs1-bg.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+             <h2 class="display-2">Objek Wisata Sangeh</h2>
+            <p>Sangeh is a very beautiful tourist village to visit.</p>
+             <button type="button" class="btn btn-lg" data-bs-toggle="modal" data-bs-target="#ytModal">Jelajahi</button>
+            <button type="button" class="btn btn-lg" data-bs-toggle="modal" data-bs-target="#ytModal2">Video</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./image/bs2-bg.jpeg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+             <h2 class="display-2">Objek Wisata Sangeh</h2>
+            <p>Sangeh is a very beautiful tourist village to visit.</p>
+            <button type="button" class="btn btn-lg" data-bs-toggle="modal" data-bs-target="#ytModal">Jelajahi</button>
+            <button type="button" class="btn btn-lg" data-bs-toggle="modal" data-bs-target="#ytModal2">Video</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./image//bs3-bg.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+               <h2 class="display-2">Objek Wisata Sangeh</h2>
+            <p>Sangeh is a very beautiful tourist village to visit.</p>
+        <button type="button" class="btn btn-lg" data-bs-toggle="modal" data-bs-target="#ytModal">Jelajahi</button>
+            <button type="button" class="btn btn-lg" data-bs-toggle="modal" data-bs-target="#ytModal2">Video</button>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- YT Video-->
+    <!-- Modal -->
+    <div class="modal fade" id="ytModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="ytModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <h3 class="modal-title" id="ytModalLabel">Jelajahi Monumen Bajra Sandhi</h3>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" align="center">
+            <iframe width="1000" height="475" src="https://www.youtube.com/embed/wZDcmpWRE4M"
+              title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-
+                media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- End YT Video-->
+
+    <!-- YT Video 2-->
+    <!-- Modal -->
+    <div class="modal fade" id="ytModal2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="ytModalLabel2" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <h3 class="modal-title" id="ytModalLabel2">Video Monumen Bajra Sandhi</h3>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" align="center">
+            <iframe width="1000" height="475" src="https://www.youtube.com/embed/wZDcmpWRE4M"
+              title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-
+                media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- End YT Video 2-->
+
+      <!-- End Video Youtube -->
+
+    <p> </p>
+
+      <!-- Wawasan -->
+      <section>
+
+        <div class="container">
+        <div class="row">
+        <div class="col-md-8">
+        <!-- Breadcrumb -->
+        <p id="objek_wisata" class="h2" align="center">Wawasan</p>
+
+        <hr>
+        <div class="row">
+        <div class="col-md-6">         
+        <figure>
+            <img src="image/berita1.jpeg" class="img-thumbnail">
+            <p> </p>
+            <figcaption class="blockquote-footer" align="center">
+                Gambar <cite title="Source Title">Monyet</cite>
+            </figcaption>       
+        </figure>
+        </div>
+
+        <div class="col-md-6">
+            <h4><a href="#" class="text-primary text-decoration-none">Monyet Sangeh Yang Rindukan Wisatawan</a></h4>
+            <p class="lead">Monyet-monyet di Sangeh, Bali Kelaparan. Moyet-monyet itu juga merasa kesepiankarena tidak ada wisatawan yang berkunjung dikarenakan Covid-19</p>
+            
+            <div class="text-muted">
+            <small>Firdia Lisnawati| </small>
+            <small>8 September 2021 | </small>
+            <small>10 comments</small>
+            </div>
+        </div>
+        <hr>
+        </div>
+
+        <div class="row">
+        <div class="col-md-6">         
+        <figure>
+            <img src="./image/berita2.jpg" class="img-thumbnail">
+            <p> </p>
+            <figcaption class="blockquote-footer" align="center">
+                Gambar <cite title="Source Title">Pengelukatan</cite>
+            </figcaption>       
+        </figure>
+        </div>
+
+        <div class="col-md-6">
+            <h4><a href="#" class="text-primary text-decoration-none">PPKM, Sejumlah Tempat Melukat Ditutup Sementara</a></h4>
+            <p class="lead">Misalnya, di Pura Kereban Langit di Desa Adat Sading, Kecamatan Mengwi, Badung. Hingga saat ini, pihaknya belum berani memperkenankan masyarakat umum untuk melukat. Hanya saja, bagi masyarakat yang benar-benar membutuhkan tirta dari Pura Kereban Langit, baru akan dilayani. Hal itu disampaikan Pemangku Pura setempat, Jero Mangku I Ketut Witera, Minggu,(15/8) di Badung. </p>
+            
+            <div class="text-muted">
+            <small>Berita Bali | </small>
+            <small>16 Agustus 2021 | </small>
+            <small>10 comments</small>
+            </div>
+        </div>
+        <hr>
+        </div>
+
+        <div class="row">
+        <div class="col-md-6">         
+        <figure>
+            <img src="image/berita3.jpg" class="img-thumbnail">
+            <p> </p>
+            <figcaption class="blockquote-footer" align="center">
+                Gambar <cite title="Source Title">Jalan Raya Abiansemal</cite>
+            </figcaption>       
+        </figure>
+        </div>
+
+        <div class="col-md-6">
+            <h4><a href="#" class="text-primary text-decoration-none">Jalan Berlubang di Abiansemal Luput dari Perhatian</a></h4>
+            <p class="lead">Kondisi jalanan di simpang Jalan Janger, Banjar Kedampal, Abiansemal, Badung sangat membahayakan pengguna kendaraan yang melintas. Jalanan tersebut sudah lama berlubang dan luput dari perhatian instansi terkait.</p>
+            
+            <div class="text-muted">
+            <small>Berita Bali | </small>
+            <small>14 Januari 2020 | </small>
+            <small>19 comments</small>
+            </div>
+        </div>
+        <hr>
+        </div>
+
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+            <li class="page-item disabled">
+            <a class="page-link">Previous</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+            <a class="page-link" href="#">Next</a>
+            </li>
+            </ul>
+        </nav>
+
+        </div>
+
+        <div class="col-md-4">
+        <div class="row">
+        <div class="col">
+            <p id="objek_wisata" class="h2" align="center">Kategori Berita</p>
+        <hr>
+        <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-between">
+            <a href="#" class="text-info text-decoration-none">Objek Wisata
+            <span class="badge badge-primary badge-pill bg-info">10</span></a>
+            </li>
+            
+            <li class="list-group-item d-flex justify-content-between">
+            <a href="#" class="text-info text-decoration-none">Sarana Akomodasi
+            <span class="badge badge-primary badge-pill bg-info">20</span></a>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between">
+                <a href="#" class="text-info text-decoration-none">Tentang Bali
+                <span class="badge badge-primary badge-pill bg-info">100</span></a>
+            </li>
+        </ul>
+        
+        </div>
+        </div>
+        </div>
+                
+       </div>
+       </div>
+        </section>
+      <!-- End Wawasan -->
+
+    <!-- Footer -->
+    </div>
+    <img src="image/wave.svg" class="card-img-top" alt="...">
+    <footer class="text-white text-center" style="background-color:#273036;">
+    <div class="container-fluid">
+    <div class="row">
+    <div class="col-md-4">
+    <p>Copyright @2021 Creative Web Design</p>
+    </div>
+    <div class="col-md-4">
+    <ul style="text-align:left;" class="list-unstyled">
+      <li>
+        <a href="#" class="text-light text-decoration-none">Home</a>
+      </li>
+      <li>
+        <a href="#objek_wisata" class="text-light text-decoration-none">Objek Wisata</a>
+      </li>
+      <li>
+        <a href="#sarana_akomodasi" class="text-light text-decoration-none">Sarana dan Akomodasi</a>
+      </li>
+      <li>
+        <a href="#wawasan" class="text-light text-decoration-none">Wawasan</a>
+      </li>
+    </ul>
+    </div>
+    <div class="col-md-4">
+    <h4>PT WEB INDO</h4>
+    <p>Desain Web </p>
+    </div>
+    </div>
+    </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
